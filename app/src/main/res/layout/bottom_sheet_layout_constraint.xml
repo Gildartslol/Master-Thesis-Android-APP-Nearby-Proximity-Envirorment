@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bottom_sheet"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/bottom_sheet_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottom_sheet_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:textSize="@dimen/text_size"
+        android:text="button 1"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_icon"
+        app:layout_constraintLeft_toRightOf="@+id/bottom_sheet_icon"
+        app:layout_constraintTop_toTopOf="@+id/bottom_sheet_icon"
+
+
+        />
+
+    <View
+        android:id="@+id/bottom_sheet_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_icon" />
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_bar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:text="button 1"
+        android:textAlignment="viewStart"
+        android:textSize="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image2"
+        app:layout_constraintLeft_toRightOf="@+id/image2" />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

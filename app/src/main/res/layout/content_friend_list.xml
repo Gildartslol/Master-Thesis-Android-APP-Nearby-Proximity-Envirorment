@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activities.friends.FriendListActivity"
+    tools:showIn="@layout/activity_friend_list">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_friendListButtom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        >
+
+        <Button
+            android:id="@+id/button_friends_friends_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons_top_friend_list"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:onClick="onFriendPressed"
+            android:layout_weight="1"
+            android:text="@string/button_friends" />
+
+        <Button
+            android:id="@+id/button_blocked_friends_list"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_top_friend_list"
+            android:onClick="onBlockedPressed"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:text="@string/button_blocked" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linear_layout_friendListButtom"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_friendListButtom" />
+
+    <TextView
+        android:id="@+id/textView_empty_view_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/friendList_no_data_available" />
+
+
+
+</android.support.constraint.ConstraintLayout>

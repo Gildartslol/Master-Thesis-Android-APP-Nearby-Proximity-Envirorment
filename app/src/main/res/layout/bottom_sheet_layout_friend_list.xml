@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bottom_sheet"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/bottom_sheet_icon_friend_list"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_bar_friend_list"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottom_sheet_button_friend_list"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:text="button 1"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_icon_friend_list"
+        app:layout_constraintLeft_toRightOf="@+id/bottom_sheet_icon_friend_list"
+        app:layout_constraintTop_toTopOf="@+id/bottom_sheet_icon_friend_list"
+        />
+
+    <View
+        android:id="@+id/bottom_sheet_bar_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_icon_friend_list" />
+
+<!--
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="button 1"
+        android:drawableStart = "@drawable/ic_block_gray_24dp"
+        android:drawablePadding="15dp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewStart"
+        android:background="@drawable/button_selection_friendlist"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_bar_friend_list"
+        />
+-->
+
+
+</android.support.constraint.ConstraintLayout>

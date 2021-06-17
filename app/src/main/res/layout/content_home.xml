@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activities.home.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+
+
+    <EditText
+        android:id="@+id/editText_advertising"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/edit_text_advertising"
+        android:textSize="12sp"
+        android:inputType="none"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/recycleViewDevices"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_advertising_home"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:checked="false"
+        android:focusable="false"
+        android:onClick="onSwitchAdvertising"
+        app:layout_constraintStart_toEndOf="@+id/editText_advertising"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_discovering"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:focusable="false"
+        android:inputType="none"
+        android:text="@string/edit_text_discovering"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_advertising"
+        app:layout_constraintEnd_toStartOf="@+id/switch_discovery_home"
+        app:layout_constraintTop_toTopOf="@+id/editText_advertising" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_discovery_home"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:checked="false"
+        android:onClick="onSwitchDiscovery"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_advertising_home"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switch_advertising_home"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewDevices"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_discovery_home" />
+
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="resetAll"
+        android:text="@string/home_activity_button_discovery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleViewDevices"
+        />
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/mainActivity_loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+        -->
+
+</android.support.constraint.ConstraintLayout>

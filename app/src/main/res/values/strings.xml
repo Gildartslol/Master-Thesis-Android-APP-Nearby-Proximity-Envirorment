@@ -1,0 +1,220 @@
+<resources>
+
+
+    <string name="app_name">ShareContentOffline</string>
+
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="error_missing_permissions">Cannot start without required permissions</string>
+    <string name="toast_connected">Connected to %s</string>
+    <string name="toast_disconnected">Disconnected from %s</string>
+    <string name="title_activity_message_list">Chat</string>
+    <string name="title_home">TittleHome</string>
+    <string name="title_dashboard">Title Dashboard</string>
+    <string name="title_notifications">Title Notification</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Home Activity -->
+    <string name="home_activity_button_discovery">RESET</string>
+    <string name="home_activity_button_stop">Not visible</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">username</string>
+    <string name="nav_header_subtitle">ShareContentOffline</string>
+    <string name="menu_primero">Files</string>
+    <string name="menu_segundo">Notify</string>
+    <string name="menu_tercero">Friend List</string>
+    <string name="menu_cuarto">Options</string>
+    <string name="item_point">POINT TO POINT</string>
+    <string name="item_star">STAR</string>
+    <string name="key_profile_uri">key_profile_uri</string>
+
+    <string name="edit_text_advertising">Advertising</string>
+    <string name="edit_text_discovering">Discovering</string>
+
+    <string name="bottom_sheet_buttom_addFriend">Add Friend</string>
+    <string name="bottom_sheet_buttom_connect_to">Connect to</string>
+    <string name="bottom_sheet_buttom_chat">Send Chat Request</string>
+    <string name="bottom_sheet_buttom_send_file">Send File</string>
+    <string name="bottom_sheet_buttom_disconnect">Disconnect</string>
+
+    <!-- FriendList Activity -->
+    <string name="friendList_no_data_available">No friends added</string>
+    <string name="friendList_no_data_block_available">No users blocked</string>
+    <string name="button_friends">Friends (%1$d)</string>
+    <string name="button_blocked">Blocked (%1$d)</string>
+    <string name="friendList_item_delete">Delete</string>
+    <string name="title_activity_friend_list">Friend List</string>
+
+    <string name="bottom_sheet_buttom_delete">Delete friend</string>
+    <string name="bottom_sheet_buttom_block">Block friend</string>
+    <string name="bottom_sheet_buttom_unBlock">Unblock friend</string>
+
+
+    <!-- Strings related to items-->
+    <string name="item_username">User: </string>
+    <string name="item_deviceName">Device: </string>
+    <string name="item_android_id">Android Id</string>
+    <string name="item_connected">Connected</string>
+    <string name="item_disconnected">Disconnected</string>
+    <string name="item_friendOK">Friend</string>
+    <string name="item_friendKO">Not Friend</string>
+    <!-- Strings related to Settings -->
+    <string name="title_activity_preferences">activity_preferences</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- General settings -->
+
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_display_name">Username</string>
+    <string name="pref_default_display_name">ShareContentOffline</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string name="key_username">key_username</string>
+    <string name="summary_general_username">The name that will be displayed on the local network</string>
+
+
+    <!-- Data & Sync settings  -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Notifications settings -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!-- Strings Arrays-->
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- BBDD messages-->
+    <string name="user_already_exist">The user is already registered</string>
+    <string name="user_insert_error">Error registering user</string>
+    <string name="user_insert_ok">User added successfully</string>
+    <string name="user_delete_error">Error deleting user</string>
+    <string name="user_delete_ok">User deleted successfully</string>
+    <string name="user_blocked_ok">User blocked successfully</string>
+    <string name="user_blocked_error">Error blocking user</string>
+    <string name="user_unblocked_ok">User unBlocked successfully</string>
+    <string name="user_unblocked_error">Error unblocking user</string>
+    <string name="user_profile_error">Error update profile image</string>
+
+    <!-- Mensajes -->
+    <string name="FriendStatusOK">User added successfully</string>
+    <string name="FriendStatusKO">Error deleting user</string>
+    <string name="FriendStatusDelete">User deleted successfully</string>
+    <string name="FriendStatusBlocked">User blocked successfully</string>
+    <string name="FriendStatusUnBlocked">User unblocked successfully</string>
+    <string name="FriendStatusNotAdded">User</string>
+    <string name="dialog_connecting">Connecting</string>
+    <string name="dialog_connected">Connected</string>
+    <string name="dialog_processing">Requesting info &#8230;</string>
+    <string name="dialog_error_connecting">Device too far or conection rejected</string>
+    <string name="dialog_exchanging_files">Exchanging files</string>
+    <string name="dialog_error">Error processing</string>
+    <string name="dialog_failure">Error transferring</string>
+    <string name="dialog_timeout">Time out with device (%1$s)</string>
+    <string name="dialog_on_failure">Lost connection with device</string>
+    <string name="dialog_on_disconnection">Request failure. Unexpected disconnection</string>
+
+
+    <!-- Notifications -->
+    <!-- Notifications Multifile -->
+    <string name="channel_name">"Channel name"</string>
+    <string name="channel_description">"Default Channel"</string>
+    <string name="notification_multifile_title">File received</string>
+    <string name="notification_multifile_body">%1$s received from %2$s </string>
+    <!-- Notifications Multifile -->
+    <string name="notification_request">Friend Request</string>
+    <string name="notification_friend_request">(%1$s) wants to add you has a friend </string>
+    <string name="notification_friend_request_end">(%1$s) added as a friend</string>
+    <!-- Dialog Connection -->
+    <string name="connection_start">Trying to connect &#8230;</string>
+    <string name="connection_timeout">TimeOut connecting to device %1$s</string>
+    <string name="connection_out_of_range"> %1$s out of range. Please re-discover devices.</string>
+    <string name="connection_connected">Connected</string>
+    <string name="connection_incoming"> %1$s wants to connect to this device</string>
+
+    <!-- Dialog Friend Request -->
+
+    <string name="friend_request_income">(%1$s) wants to add you has a friend</string>
+    <string name="friend_request_type">Connecting &#8230;</string>
+    <string name="friend_request_start">Starting &#8230;</string>
+    <string name="friend_request_profile_percent" formatted="true">Receiving profile image &#8230;</string>
+    <string name="friend_request_done_waiting">Done. Waiting confirmation &#8230;</string>
+    <string name="friend_request_added">Added successfully</string>
+    <string name="friend_request_timeOut">TimeOut. Petition end</string>
+
+    <!-- Dialog Multi Exchange -->
+    <string name="multi_exchange_all_send">All files have been send</string>
+    <string name="multi_exchange_onConnect">Connecting to (%1$s)</string>
+    <string name="multi_exchange_reject">Connection rejected by (%1$s)</string>
+    <string name="multi_exchange_connected_to">Connected to (%1$s)</string>
+    <string name="multi_exchange_sending_file">Sending file &#8230;</string>
+    <string name="multi_exchange_sending_file_percent">Sending file &#8230; (%1$d)%%</string>
+    <string name="multi_exchange_file_send">File send to (%1$s)</string>
+    <!-- Dialog File Transfer -->
+    <string name="file_exchange_start">Starting &#8230;</string>
+    <string name="file_exchange_send">Sending file &#8230; (%1$d)%%</string>
+    <string name="file_exchange_receive">Receiving file (%1$s) (%2$s)%%</string>
+    <string name="file_exchange_file_send">Transfer completed</string>
+    <string name="file_exchange_warning_size">File is larger than 10MB. It is recommended to change to POINT_TO_POINT status in BOTH devices</string>
+    <!-- Dialog chat -->
+    <string name="chat_start">Waiting for user &#8230;</string>
+    <string name="chat_type">(%1$s) wants to chat</string>
+    <string name="chat_rejected">(%1$s) rejected to chat</string>
+    <string name="chat_timeout">TimeOut. Petition end</string>
+    <string name="chat_end">The user has left the channel</string>
+    <string name="chat_error">Fatal error during transmission</string>
+
+    <string name="size_error">Image size cannot be larger than 200KB</string>
+
+
+
+</resources>
